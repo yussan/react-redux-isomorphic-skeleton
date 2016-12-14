@@ -1,0 +1,25 @@
+{
+  "name": "aoi",
+  "version": "0.0.1",
+  "description": "a isomorphic app framework",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/idmore/aoi.git"
+  },
+  "keywords": [
+    "isomorphic",
+    "framework",
+    "nodejs",
+    "react"
+  ],
+  "author": "yussan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/idmore/aoi/issues"
+  },
+  "homepage": "https://github.com/idmore/aoi#readme"
+}
