@@ -7,11 +7,14 @@ applications are applications written in JavaScript that can run both on the cli
 ref : https://www.sitepoint.com/isomorphic-javascript-applications/
 
 ## Setup
-Execute this command at first time to install required dependency
+Make sure to install NodeJS first, i recommend using LTS version. https://github.com/nodejs/LTS. Execute this command at first time to install required dependency
 ```
 npm install
 ```
 After that, copy and rename `.env.example` on root directory to `.env`
 
 ## Start Develop
-Make sure to setup environment mode on `.env` file. Please select one `DEVELOP` or `PRODUCTION`.
+Make sure to setup environment mode on `.env` file. Please select one `DEVELOP` or `PRODUCTION`. Execute this command to start server
+```
+npm run start
+```
