@@ -1,0 +1,29 @@
+{
+  "ecmaFeatures": {
+    "jsx": true,
+    "modules": true
+  },
+  "env": {
+    "browser": true,
+    "node": true
+  },
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "rules": {
+    "strict": [2, "never"],
+    "semi": [1, "never"],
+    "react/jsx-uses-react": 2,
+    "react/jsx-uses-vars": 2,
+    "react/react-in-jsx-scope": 2,
+    "no-underscore-dangle": 0
+  },
+  "plugins": [
+    "react"
+  ]
+}
