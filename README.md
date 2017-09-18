@@ -19,7 +19,7 @@ npm install -g aoi
 Execute this command into your terminal
 
 ```
-aoi create my-project-name
+$aoi create my-project-name
 ```
 
 Then automatically create a new directory as your project name. That is where you will work.
