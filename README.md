@@ -2,7 +2,7 @@
 Aoi is a framework for isomorphic apps. Built using base of Express and ReactJS. This framework allowing to run server rendering and server request using React JS codes.
 
 <div style="text-align:center">
-![React Redux Isomorphic App](https://pbs.twimg.com/media/DL56FSWVoAA-BUA.jpg:large)
+!(React Redux Isomorphic App)[https://pbs.twimg.com/media/DL56FSWVoAA-BUA.jpg:large]
 </div>
 
 ## About Isomorphic Javascript
