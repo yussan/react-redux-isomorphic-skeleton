@@ -1,5 +1,5 @@
 # React Redux Isomorphic Boilerplate [WIP Project]
-Built using base of Express and ReactJS. This framework allowing to run server rendering and server request using React JS codes.
+Isomorphic apps, built using base of Express, ReactJS and Redux. This allowing to run server rendering and server request.
 
 <div style="text-align:center">
 <img src="https://pbs.twimg.com/media/DL56FSWVoAA-BUA.jpg:large" />
