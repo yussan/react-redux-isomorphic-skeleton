@@ -18,7 +18,7 @@ if(process.env.NODE_ENV == 'production')
   app.use(compression())
   // static file caching
   staticOptions = defaultConf.caching
-}
+} 
 
 app.disabled('x-powered-by')
 
