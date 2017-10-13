@@ -1,6 +1,6 @@
 {
   "name": "aoi",
-  "version": "0.0.1",
+  "version": "0.0.2-beta.0",
   "description": "a ReactJS isomorphic framework",
   "main": "index.js",
   "author": "yussan",
