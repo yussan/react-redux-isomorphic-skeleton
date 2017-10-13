@@ -8,16 +8,6 @@ import os from 'os'
 const port = process.env.APP_PORT || 18080
 app.set('port', port)
 
-// production configuration
-if(process.env.NODE_ENV == 'production')
-{
-  // gzip compression
-  const compression = require('compression')
-  app.use(compression())
-  // static file caching
-  staticOptions = defaultConf.caching
-}
-
 // clustering
 if(cluster.isMaster && process.env.NODE_ENV == 'production')
 {

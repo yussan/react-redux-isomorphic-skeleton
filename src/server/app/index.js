@@ -10,6 +10,16 @@ import defaultConf from '../../config/app'
 const app = express()
 let staticOptions = {}
 
+// production configuration
+if(process.env.NODE_ENV == 'production')
+{
+  // gzip compression
+  const compression = require('compression')
+  app.use(compression())
+  // static file caching
+  staticOptions = defaultConf.caching
+}
+
 app.disabled('x-powered-by')
 
 // global midleware
