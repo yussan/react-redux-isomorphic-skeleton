@@ -16,7 +16,8 @@
     "prod:server": "rimraf ./dist && NODE_ENV=production babel src -d dist --ignore '**/*_test.js' --copy-files",
     "prod:build": "npm run prod:webpack && npm run prod:server",
     "prod:start": "NODE_ENV=production nodemon --watch src/ --watch assets/ --exec 'node -r dotenv/config' ./dist/server/index",
-    "prepublish": "npm run prod:build"
+    "release": "standard-version",
+    "release:beta": "standard-version -p beta"
   },
   "dependencies": {
     "express": "^4.15.4",
@@ -47,6 +48,7 @@
     "nodemon": "^1.12.0",
     "redux-logger": "^3.0.6",
     "rimraf": "^2.6.2",
+    "standard-version": "^4.2.0",
     "webpack": "^3.5.6"
   }
 }
