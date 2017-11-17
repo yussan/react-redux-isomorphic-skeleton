@@ -12,7 +12,8 @@
   "scripts": {
     "start": "nodemon --watch src/ --watch assets/ --exec 'node -r dotenv/config -r babel-register' ./src/server/index",
     "webpack": "rimraf assets/build && NODE_ENV=development webpack --watch --progress",
-    "prod:webpack": "rimraf ./assets/build && NODE_ENV=production webpack --progress",
+"prepublish": "npm run prod:webpack",    
+"prod:webpack": "rimraf ./assets/build && NODE_ENV=production webpack --progress",
     "prod:server": "rimraf ./dist && NODE_ENV=production babel src -d dist --ignore '**/*_test.js' --copy-files",
     "prod:build": "npm run prod:webpack && npm run prod:server",
     "prod:test-start": "NODE_ENV=production nodemon --watch src/ --watch assets/ --exec 'node -r dotenv/config' ./dist/server/index",
