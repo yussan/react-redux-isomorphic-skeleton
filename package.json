@@ -18,7 +18,7 @@
     "build:prod": "npm run webpack:prod && npm run server:prod",
     "server:test-prod": "nodemon --watch src/ --watch assets/ --exec 'node -r dotenv/config' ./dist/server/index",
     "release": "standard-version",
-    "release:staging": "standard-version -p beta"
+    "release:beta": "standard-version -p beta"
   },
   "dependencies": {
     "babel-plugin-transform-class-properties": "^6.24.1",
