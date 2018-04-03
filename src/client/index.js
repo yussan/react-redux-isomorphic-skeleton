@@ -14,4 +14,4 @@ const App = () => (
   </BrowserRouter>
 )
 
-ReactDOM.render(<App />, document.getElementById('app'))
+ReactDOM.hydrate(<App />, document.getElementById('app'))

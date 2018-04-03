@@ -5,8 +5,18 @@ import http from 'http'
 import cluster from 'cluster'
 import os from 'os'
 
-const port = process.env.APP_PORT || 18080
+const port = process.env.APP_PORT || 2018
 app.set('port', port)
+
+// production configuration
+if(process.env.NODE_ENV == 'production')
+{
+  // gzip compression
+  const compression = require('compression')
+  app.use(compression())
+  // static file caching
+  staticOptions = defaultConf.caching
+}
 
 // clustering
 if(cluster.isMaster && process.env.NODE_ENV == 'production')
@@ -30,6 +40,7 @@ if(cluster.isMaster && process.env.NODE_ENV == 'production')
 }
 else
 {
+    // start the server
     const server = http.createServer(app)
     server.listen(port)
     server.on('error', onError)

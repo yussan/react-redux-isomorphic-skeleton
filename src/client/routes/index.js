@@ -1,9 +1,9 @@
 // containers
-import Home from '../containers/Home'
-import About from '../containers/About'
+import Home from '../containers/home'
+import About from '../containers/about'
 import NotFound from '../containers/errors/NotFound'
-import Users from '../containers/Users'
-import UserDetail from '../containers/UserDetail'
+import Users from '../containers/user'
+import UserProfile from '../containers/user/Profile'
 
 // layouts
 import RootLayout from '../layouts/Root'
@@ -32,7 +32,7 @@ export default [
       {
         path: '/users/:username',
         exact: true,
-        component: UserDetail
+        component: UserProfile
       },
       // default page (return 404)
       {

@@ -9,6 +9,8 @@ export function dirrectRequest(req, res, next)
         endpoint: req.originalUrl.replace('/api', ''),
         params: req.params
     }
+
+    // parse formdata
     if(req.method != 'GET') // POST, PUT, DELETE, ...
     {
         const form = new formidable.IncomingForm()
@@ -17,8 +19,9 @@ export function dirrectRequest(req, res, next)
             req.reqdata.params = Object.assign({}, req.params, params)
             next()
         })
+    } else {
+        next()
     }
-    next()
 }
 
 // api caller
@@ -26,7 +29,7 @@ export function apiCaller(req, res)
 {
     const debugApiReq = require('debug')('app:api-req')
     const debugApiRes = require('debug')('app:api-res')
-    const {method, endpoint, params} = req.reqdata
+    const { method, endpoint, params} = req.reqdata
 
     // log
     debugApiReq(`${method} ${endpoint} at ${new Date().toISOString().replace(/T/, ' ').replace(/\..+/, '')}`)

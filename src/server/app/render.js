@@ -34,7 +34,7 @@ export default function handleRender(req, res, next){
       res.status(500).end('internal server error')
     } else {
       //render html + preloaded state
-      res.send(renderHtml(html, store.getState()))
+      res.end(renderHtml(html, store.getState()))
     }
   })  
 }
