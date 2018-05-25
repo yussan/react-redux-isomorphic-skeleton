@@ -26,21 +26,17 @@ Isomporphic applications can run both on clients such as web browsers and on ser
     Clone this repository to your local machine.
     ```
     git clone https://github.com/yussan/react-redux-isomorphic-boilerplate
-    ```
+    ```    
 * ### Installation
     Install dependencies using yarn
     ```
     yarn install
-    ```
+    ```  
 * ### Development Scripts 
-    Run the server
+    Run the server and Webpack build
     ```
     yarn start
-    ```
-    Run client build 
-    ```
-    yarn webpack
-    ```
+    ```    
 * ### Open in browser
     Visit [http://localhost:18080](http://localhost:18080), or whichever port specified in your configuration file (`.env`).
 
