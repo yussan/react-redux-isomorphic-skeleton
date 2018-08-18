@@ -38,7 +38,17 @@ module.exports = {
               test: /\.(js|jsx)$/,
               use: [
                 {
-                  loader: 'babel-loader'
+                  loader: 'babel-loader',
+                  options: {
+                    babelrc: false,
+                    presets: ["es2015", "react"],
+                    plugins: ["transform-class-properties", "syntax-dynamic-import"],
+                    env: {
+                      production: {
+                        presets: []
+                      }
+                    }
+                  }
                 }
               ]             
           }
