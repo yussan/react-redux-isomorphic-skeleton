@@ -1,9 +1,10 @@
 import React from 'react'
 import ReactHelmet from 'react-helmet'
-import {toCamelCase} from 'string-manager'
+import { toCamelCase } from 'string-manager'
 import configApp from '../../config/app'
+import PropTypes from 'prop-types'
 
-export default (props) => {
+const Helmet = (props) => {
     let {title, description, url, image, type, script, link} = props
     if(!title) title = configApp.title
     if(!description) description = configApp.description
@@ -28,4 +29,11 @@ export default (props) => {
     />
     )
 }
+
+Helmet.defaultProps = {
+    title: 'This is Title',
+    description: 'Description is the best'
+}
+
+export default Helmet
 
