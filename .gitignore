@@ -484,3 +484,4 @@ __pycache__/
 dist
 assets/build
 src/config/webpack-assets.json
+yarn.lock
