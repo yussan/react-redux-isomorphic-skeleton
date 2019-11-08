@@ -2,7 +2,6 @@
 
 import app from "./app/index"
 import http from "http"
-import os from "os"
 import Loadable from "react-loadable"
 
 const port = process.env.APP_PORT || 2018
@@ -13,8 +12,6 @@ if (process.env.NODE_ENV == "production") {
   // gzip compression
   const compression = require("compression")
   app.use(compression())
-  // static file caching
-  staticOptions = defaultConf.caching
 }
 
 // start the server
