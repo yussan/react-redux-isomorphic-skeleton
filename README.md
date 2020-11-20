@@ -1,7 +1,10 @@
 
 [![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg)](https://conventionalcommits.org)
 
-# React Redux Isomorphic Boilerplate
+# [Deprecated] React Redux Isomorphic Boilerplate
+
+This repo is deprecated, move with new one, created with Next https://github.com/yussan/next-redux-skeleton
+
 Isomorphic apps, built using Express, ReactJS and Redux. This allows to server side rendering and server requests.
 
 <div style="text-align:center">
